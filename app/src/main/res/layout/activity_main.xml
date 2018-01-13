@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.sharedelement.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/shared_element"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        tools:layout_editor_absoluteX="53dp"
+        tools:layout_editor_absoluteY="415dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/imgSmartherdLogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/filmax"
+            android:transitionName="logo_shared" />
+
+        <TextView
+            android:id="@+id/txvSharedElement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Amit Encoders"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:transitionName="smartherd_shared" />
+
+        <ImageView
+            android:id="@+id/imgAnnie"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:transitionName="profile_pic_shared" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
